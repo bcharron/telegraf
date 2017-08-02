@@ -29,8 +29,8 @@ func TestCleanTags(t *testing.T) {
 			map[string]string{"aaa": "bbb"},
 		},
 		{
-			map[string]string{"Sp%ci@l Chars": "g$t repl#ced"},
-			map[string]string{"Sp-ci-l_Chars": "g-t_repl-ced"},
+			map[string]string{"(Sp%ci@l Chars)": "[g$t repl#ced]"},
+			map[string]string{"_Sp-ci-l_Chars_": "_g-t_repl-ced_"},
 		},
 		{
 			map[string]string{},
